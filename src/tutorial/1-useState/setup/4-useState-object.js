@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 
 const UseStateObject = () => {
-  const [person, setPerson] = useState({name:'hashan', age:24, message: 'random message'});
-  
-  const toggleMessage = () => {
-    if (person.message === 'random message'){
-      setPerson({...person, message : 'hello world'})
-    }
-    else{
-      setPerson({...person, message : 'random message'})
-    }
-  }
-
+  const [name, setName] = useState('Hashan')
+  const [age, setAge] = useState(24)
+  const [message, setMessage] = useState('randome message')
 
   return(
    <>
-      <h3>{person.name}</h3>
-      <h3>{person.age}</h3>
-      <h3>{person.message}</h3>
-      <button className="btn" onClick={toggleMessage}>
-        change message
+      <h3>{name}</h3>
+      <h3>{age}</h3>
+      <h3>{message}</h3>
+      <button className="btn" onClick={() => setMessage('hello hashan')}>
+        change Message
+      </button>
+
+      <button className="btn" onClick={() => setName('Eranga')}>
+        change Name
+      </button>
+
+      <button className="btn" onClick={() => setAge(34)}>
+        change Age
       </button>
    </>
 
