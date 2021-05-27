@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const UseStateObject = () => {
   const [person, setPerson] = useState({name:'hashan', age:24, message: 'random message'});
   
-  const changeMessage = () => {
+  const toggleMessage = () => {
     if (person.message === 'random message'){
       setPerson({...person, message : 'hello world'})
     }
@@ -18,7 +18,7 @@ const UseStateObject = () => {
       <h3>{person.name}</h3>
       <h3>{person.age}</h3>
       <h3>{person.message}</h3>
-      <button className="btn" onClick={changeMessage}>
+      <button className="btn" onClick={toggleMessage}>
         change message
       </button>
    </>
