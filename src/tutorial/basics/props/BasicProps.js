@@ -31,11 +31,12 @@ function BasicProps() {
 }
 
 // Book Component
-function Book(props) {
+// direct method to define attributes instead of props
+function Book({image, title, author}) {
     // content of the book
 
     // another method of defining props attributes
-    const {image, author, title} = props
+    // const {image, author, title} = props
 
     return(
         <article>
