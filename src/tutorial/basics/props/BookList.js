@@ -8,9 +8,8 @@ function BookList() {
             {Books.map((bookItem)=>{
                 return(
                 <Book
-                    image={bookItem.img}
-                    title={bookItem.title}
-                    author={bookItem.author}
+                    key={bookItem.id} 
+                    {...bookItem}
                 />
                 )
             })}
