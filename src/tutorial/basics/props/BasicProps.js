@@ -33,11 +33,15 @@ function BasicProps() {
 // Book Component
 function Book(props) {
     // content of the book
+
+    // another method of defining props attributes
+    const {image, author, title} = props
+
     return(
         <article>
-            <img src={props.image} alt='' width={width} height={height}/>
-            <h4>{props.author}</h4>
-            <h4>{props.title}</h4>
+            <img src={image} alt='' width={width} height={height}/>
+            <h4>{author}</h4>
+            <h4>{title}</h4>
         </article>
     )
 }
