@@ -7,8 +7,6 @@ import App from './App';
 
 // using this method the App.js will be rendered into the index.html
 ReactDOM.render(
-  <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  ,document.getElementById('root')
 );

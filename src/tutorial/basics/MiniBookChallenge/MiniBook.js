@@ -2,24 +2,24 @@ import React from 'react'
 
 function MiniBook() {
     return (
-        <div>
+        <section>
             {/* This is the Book shelf */}
             <Book/>
             <Book/>
             <Book/>
             <Book/>
-        </div>
+        </section>
     )
 }
 
 const Book = () => {
     // This is a single book component  
     return(
-        <>
+        <article>
             <Image/>
             <Title/>
             <Author/>
-        </>
+        </article>
     )
 }
 
