@@ -1,9 +1,23 @@
 import React, { useState } from 'react';
 
 const UseStateObject = () => {
+<<<<<<< HEAD
   const [name, setName] = useState('Hashan')
   const [age, setAge] = useState(24)
   const [message, setMessage] = useState('randome message')
+=======
+  const [person, setPerson] = useState({name:'hashan', age:24, message: 'random message'});
+  
+  const changeMessage = () => {
+    if (person.message === 'random message'){
+      setPerson({...person, message : 'hello world'})
+    }
+    else{
+      setPerson({...person, message : 'random message'})
+    }
+  }
+
+>>>>>>> d112c2fad67df05481afde6e96bc4920f92f925c
 
   return(
    <>
