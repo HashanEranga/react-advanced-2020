@@ -5,7 +5,7 @@ import React from 'react'
 // import Greetings from './tutorial/basics/firstComponent/FirstComponent'
 // import BasicProps from './tutorial/basics/props/BasicProps'
 // import BookList from './tutorial/basics/props/BookList'
-import Setup from './tutorial/1-useState/setup/2-useState-basics'
+import Setup from './tutorial/1-useState/setup/3-useState-array'
 function App() {
   return (
     <div className="container">
