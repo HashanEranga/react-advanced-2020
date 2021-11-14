@@ -1,19 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ErrorExample = () => {
-  let title = ' Hashan Eranga ';
-
+  let title = 'Hashan Eranga';
+  
   const handleClick = () =>{
-    title = 'hello hashan';
-    console.log(title);
-  } 
+        title = 'Hello People'
+        console.log(title)
+  }
+
   return (
-    <React.Fragment>
+    <>
       <h2>{title}</h2>
       <button type='button' className='btn' onClick={handleClick}>
-          change title
+        Click Here
       </button>
-    </React.Fragment>
+    </>
   );
 };
 
