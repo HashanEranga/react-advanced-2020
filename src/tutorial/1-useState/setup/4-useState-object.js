@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 
 const UseStateObject = () => {
-<<<<<<< HEAD
-  const [name, setName] = useState('Hashan')
-  const [age, setAge] = useState(24)
-  const [message, setMessage] = useState('randome message')
-=======
   const [person, setPerson] = useState({name:'hashan', age:24, message: 'random message'});
   
   const changeMessage = () => {
@@ -17,24 +12,15 @@ const UseStateObject = () => {
     }
   }
 
->>>>>>> d112c2fad67df05481afde6e96bc4920f92f925c
-
   return(
    <>
-      <h3>{name}</h3>
-      <h3>{age}</h3>
-      <h3>{message}</h3>
-      <button className="btn" onClick={() => setMessage('hello hashan')}>
-        change Message
-      </button>
+	  <h1>{person.name}</h1>
+	  <h2>{person.age}</h2>
+	  <h4>{person.message}</h4>
 
-      <button className="btn" onClick={() => setName('Eranga')}>
-        change Name
-      </button>
-
-      <button className="btn" onClick={() => setAge(34)}>
-        change Age
-      </button>
+	  <button className='btn' onClick={changeMessage} type='button'>
+	  	change Message
+	  </button>
    </>
 
   )
